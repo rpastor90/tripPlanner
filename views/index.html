@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}  
+
+<div class="Selectors">
+  <h3>Hotels</h3>
+  <select name="hotelSelector" >
+      {% for hotel in all_hotels %}
+    <option >
+        {{ hotel.name }}     
+    </option>
+      {% endfor %}  
+  </select>
+
+
+  <h3>Restaurants</h3>
+  <select name="restaurantSelector" >
+      {% for restaurant in all_restaurants %}
+    <option >
+        {{ restaurant.name }}     
+    </option>
+      {% endfor %}  
+  </select>
+
+
+  <h3>Activities</h3>
+  <select name="activitySelector" >
+      {% for activity in all_activities %}
+    <option >
+        {{ activity.name }}     
+    </option>
+      {% endfor %}  
+  </select>
+<hr>
+
+  <h4><a href='/'>Day 1</a> / <a href='/'>Day 2</a></h4>
+    <strong> My Hotel </strong>
+    <li> W Hotel</li>
+    <br>
+    <strong> My Restaurants </strong>
+    <li> Chipotle </li>
+    <br>
+    <strong> My Activities </strong>
+    <li> Walk Through Central Park </li>
+  <br>
+  <div class='buttons' style="display: inline">
+  <button class="btn btn-danger" id="magicButton">Map</button>
+  <button class="btn btn-default">Getting Around</button>
+  <button class="btn btn-default">Lucky</button>
+  </div>
+</div>
+
+
+
+{% endblock %}

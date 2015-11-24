@@ -8,15 +8,22 @@
     "body-parser": "1.14.1",
     "chalk": "1.1.1",
     "express": "4.13.3",
+    "jQuery": "^1.7.4",
+    "jquery": "^2.1.4",
+    "marked": "^0.3.5",
     "mongoose": "4.2.7",
     "morgan": "1.6.1",
     "swig": "1.4.2"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "node-sass": "file:node-sass",
     "nodemon": "1.8.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+    "start": "npm run build-css & nodemon -e html,css,js app.js"
   },
   "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
   "license": "MIT"

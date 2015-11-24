@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box; }
+
+#pic {
+  margin-top: 100px;
+  height: 80vh;
+  width: 145vh;
+  border: 1px solid black;
+  position: fixed;
+  margin-left: 40px;
+  float: left;
+  /*background: url('/images/w_hotel-1.jpg') no-repeat;*/
+  background-size: 100%; }
+  #pic #tech-slideshow {
+    height: 100%;
+    position: relative;
+    overflow: hidden; }
+  #pic #tech-slideshow > div {
+    height: 100%;
+    width: 2526px;
+    background: url("/images/collage.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -webkit-animation: moveSlideshow 60s linear infinite;
+    -moz-animation: moveSlideshow 60s linear infinite; }
+
+@-webkit-keyframes moveSlideshow {
+  0% {
+    left: 0; }
+  100% {
+    left: -1684px; } }
+
+@-moz-keyframes moveSlideshow {
+  0% {
+    left: 0; }
+  100% {
+    left: -1684px; } }
+
+.contentBox {
+  margin-top: 100px;
+  height: 80vh;
+  width: 145vh;
+  background-color: gray;
+  border: 1px solid black;
+  position: fixed;
+  margin-left: 40px;
+  float: left; }
+  .contentBox p {
+    color: blue; }
+
+li {
+  list-style-type: none; }
+
+.Selectors {
+  margin: 100px 20px;
+  height: 80vh;
+  width: auto;
+  float: right;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7; }
+
+body {
+  background: url("/images/nypic_960.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  color: red; }
+
+.navbar {
+  opacity: 0.5;
+  height: 50px;
+  background-color: white; }
